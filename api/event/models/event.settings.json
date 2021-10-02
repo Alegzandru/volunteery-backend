@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tasks",
+  "collectionName": "events",
   "info": {
-    "name": "task",
+    "name": "event",
     "description": ""
   },
   "options": {
@@ -15,26 +15,27 @@
     "name": {
       "type": "string"
     },
-    "hours": {
-      "type": "decimal"
-    },
-    "confirmation": {
-      "type": "boolean"
+    "date": {
+      "type": "datetime"
     },
     "end_date": {
       "type": "datetime"
     },
-    "event": {
-      "via": "tasks",
-      "model": "event"
+    "tasks": {
+      "collection": "task",
+      "via": "event"
     },
     "organization": {
-      "via": "tasks",
+      "via": "events",
       "model": "organization"
     },
     "customers": {
-      "via": "tasks",
+      "via": "events",
       "collection": "customer"
+    },
+    "locations": {
+      "collection": "location",
+      "via": "event"
     }
   }
 }
