@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  // ...
+  // Checking
   upload: {
     provider: 'cloudinary',
     providerOptions: {
