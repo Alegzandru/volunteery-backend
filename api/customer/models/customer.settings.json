@@ -18,8 +18,8 @@
       "type": "string"
     },
     "tasks": {
-      "collection": "task",
       "via": "customers",
+      "collection": "task",
       "dominant": true
     },
     "events": {

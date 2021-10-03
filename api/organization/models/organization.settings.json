@@ -20,8 +20,8 @@
       "collection": "event"
     },
     "tasks": {
-      "collection": "task",
-      "via": "organization"
+      "via": "organization",
+      "collection": "task"
     },
     "customers": {
       "via": "organizations",

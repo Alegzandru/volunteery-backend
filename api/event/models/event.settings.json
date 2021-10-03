@@ -22,8 +22,8 @@
       "type": "datetime"
     },
     "tasks": {
-      "collection": "task",
-      "via": "event"
+      "via": "event",
+      "collection": "task"
     },
     "organization": {
       "via": "events",

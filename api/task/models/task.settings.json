@@ -35,6 +35,9 @@
     "customers": {
       "via": "tasks",
       "collection": "customer"
+    },
+    "done": {
+      "type": "boolean"
     }
   }
 }
